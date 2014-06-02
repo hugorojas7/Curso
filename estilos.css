@@ -3,4 +3,112 @@ a{
 }
 body{
 	background: #EEEEEE;
+	font-size: 16px;
 }
+footer{
+	background: #972b76;
+	text-align: center;
+	color: rgba (255,255,255, 0.7);
+	padding: 1em;
+}
+footer p:first-child{
+	background: red;
+	margin-bottom: 0;
+}
+footer p:last-child{
+	background: green;
+	margin-top: 0;
+
+}
+footer p:last-child:after{
+	content:"-" ;
+}
+footer p:last-child:before{
+	content:"-" ;
+}
+header{
+	background: #ff1246;
+	padding: 0.5em;
+	overflow: hidden;
+	position:relative;
+
+}
+header figure{
+	float: left;
+	margin: 0 0 0 0;
+
+}
+
+header #logo img{
+	width: 60px;
+	border-right: 1px solid white;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+
+}
+header h1 {
+	font-size: 1.8em;
+	font-weight: lighter;
+	margin: 0 70px 0 0;
+
+}
+header #avatar{
+	position: absolute;
+	top:0;
+	right:0;
+	margin: 1em 1em 0 0;
+}
+header #avatar img{
+	width: 50px;
+	border-radius: 50%;
+	background: #fffc61;
+}
+nav{
+	background: #0dcfff;
+	position: relative;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 0.5em 0 0;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 0.5em;
+	display: block;
+}
+nav ul #publicar{
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+nav ul #publicar a {
+	background:#3c5797; 
+	border-radius: 5px;
+	padding: 0.8em 0.5em;
+	box-shadow: rgba( 0,0,0,0.5) 3px 3px 10px;
+	font-style: italic;
+}
+#contenido{
+	margin: 1em;
+}
+#contenido .proyectos{
+	background: white;
+	border-bottom: 3px solid #217097;
+	min-height: 130px;
+}
+#contenido .proyectos .img_proyecto{
+	float: left;
+}
+#contenido .proyectos .img_proyecto img{
+	width: 90px;
+	background: #976f1d;
+	margin: 0 0.5em 0 0.3em;
+}
+
