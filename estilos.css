@@ -1,5 +1,6 @@
 a{
 	color:#ec1142;
+	text-decoration: none;
 }
 body{
 	background: #EEEEEE;
@@ -100,15 +101,63 @@ nav ul #publicar a {
 }
 #contenido .proyectos{
 	background: white;
-	border-bottom: 3px solid #217097;
-	min-height: 130px;
+	border-bottom: 3px solid #0672ab;
+	min-height: 120px;
+	position: relative;
+	margin-bottom: 3em;
 }
 #contenido .proyectos .img_proyecto{
 	float: left;
+	margin: 0 1em 0 0;
 }
 #contenido .proyectos .img_proyecto img{
-	width: 90px;
-	background: #976f1d;
-	margin: 0 0.5em 0 0.3em;
+	height: 120px;
+	width: 96px;
+	background: #ab6d2e;
+}
+#contenido .proyectos .titulo_proyecto {
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 0;
+	color: #444;
+	padding: 0.5em 0 0 0;
+
+}
+#contenido .proyectos .titulo_proyecto a{
+	text-decoration: none;
+	color:#444;
 }
 
+#contenido .proyectos .autor_item{
+	color: #AAA;
+}
+#contenido .proyectos .datos_item .fecha_item{
+	color: #AAA;
+	float: right;
+}
+#contenido .proyectos .datos_item .tag_item{
+	background: #F4502A;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+	border-radius: 3px;
+}
+#contenido .proyectos .datos_item{
+	margin: 1em 1em 0 0;
+}
+#contenido .proyectos .votacion{
+	left: 5%;
+	right: 5%;
+	position: absolute;
+	top: 100%;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+}
+#contenido .proyectos .votacion .comentarios_item,
+#contenido .proyectos .votacion .guardar_item
+{
+	float: right;
+}
