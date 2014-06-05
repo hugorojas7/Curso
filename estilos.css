@@ -1,3 +1,54 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?-cyzidy');
+	src:url('fuentes/icomoon.eot?#iefix-cyzidy') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?-cyzidy') format('woff'),
+		url('fuentes/icomoon.ttf?-cyzidy') format('truetype'),
+		url('fuentes/icomoon.svg?-cyzidy#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;a
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pen:before {
+	content: "  \e600";
+}
+.icon-bubble:before {
+	content: "\e601";
+}
+.icon-star:before {
+	content: "\e602";
+	color: #d1ae15;
+	margin-right: 0.4em;
+}
+.icon-arrow-up:before {
+	content: "\e603";
+	color: #25d13f;
+}
+.icon-arrow-down:before {
+	content: "\e604";
+	color: #d11025;
+}
+.icon-code:before {
+	content: "\e605";
+}
+.icon-share:before {
+	content: "\e606";
+}
+
 a{
 	color:#ec1142;
 	text-decoration: none;
@@ -67,6 +118,7 @@ header #avatar img{
 nav{
 	background: #0dcfff;
 	position: relative;
+	padding: 0 4em 0 0;
 }
 nav ul{
 	list-style: none;
@@ -82,6 +134,12 @@ nav ul li a{
 	text-decoration: none;
 	padding: 0.5em;
 	display: block;
+	-webkit-transition:0.3s;
+}
+nav ul li a:hover{
+	background:#2f3f4e;
+
+
 }
 nav ul #publicar{
 	
@@ -96,6 +154,13 @@ nav ul #publicar a {
 	box-shadow: rgba( 0,0,0,0.5) 3px 3px 10px;
 	font-style: italic;
 }
+nav ul #publicar a:hover:before{
+	font-size: 1.2em;
+	
+	color: red;
+
+}
+
 #contenido{
 	margin: 1em;
 }
@@ -160,4 +225,43 @@ nav ul #publicar a {
 #contenido .proyectos .votacion .guardar_item
 {
 	float: right;
+}
+#main_video{
+	display: none;
+}
+@media print{
+	body{
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 800px) {
+
+	body{
+		/*background: red;*/
+	}
+	#contenido{
+		overflow: hidden;
+	}
+	#contenido .proyectos{
+		width: 48%;
+		float: left;
+		
+	}
+	#contenido .proyectos:nth-child(odd){
+		margin-right: 2%;
+		
+	}
+
+}
+@media screen and (min-width: 1000px) {
+	#main_video{
+		display: block;
+		float: right;
+
+		
+	}
+	#main_video video{
+		width: 300px;
+		margin: 1em;
+	}
 }
